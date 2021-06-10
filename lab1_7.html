@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Машинки 7</title>
+    <script type="text/javascript">
+
+        function sort(){
+            lessons = new Array("Мат.анализ","Геометрия","Физика","Информатика","Механика","Психологиия","Философия","Обществознание","Педагогика","Иностранный язык");
+            document.write("Предметы: "+lessons);
+            tech = lessons.slice(0,5);
+            human = lessons.slice(5,10);
+            for(var i = 0; i < tech.length; i++)
+                document.write("<tr><td>"+tech[i]+"</td><td>"+human[i]+"</td></tr>");
+
+        }
+
+    </script>
+</head>
+<body>
+<h1>Предметы</h1>
+<table>
+    <tr>
+        <th>Точные науки</th>
+        <th>Гуманитарные науки</th>
+    </tr>
+    <script type="text/javascript">
+        sort();
+    </script>
+</table>
+</body>
+</html>

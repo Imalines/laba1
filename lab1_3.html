@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Машинки 3</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function name() {
+        name = prompt("Введите ваше имя:");
+        bodyName = "<div class='name'> Ваше имя " + name + "?</div>";
+        document.body.innerHTML = bodyName;
+    }
+
+    function rename() {
+        if (confirm("Заново?")) {
+            if (confirm("Не надоело?")) {
+                name();
+                setTimeout(rename, 2000);
+            } else {
+                alert("Ну и правильно!");
+            }
+        } else {
+            alert("Ну и правильно!");
+        }
+
+    }
+
+    name();
+    setTimeout(rename, 2000);
+</script>
+
+</body>
+</html>

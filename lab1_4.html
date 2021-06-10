@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Машинки 4</title></head>
+<body>
+
+<script type="text/JavaScript">
+    document.write("<b><p width='100'>Password - CAR</p></b>");
+    function compair() {
+    var x, y;
+    x = parseInt(prompt("Введите значение a", ''));
+    y = parseInt(prompt("Введите значение у", ''));
+    if (x < y) {
+        alert(" Максимальное число - y");
+    } else if (x > y) {
+        alert(" Максимальное число - a");
+    } else {
+        alert(" Числа равны!");
+    }
+}
+
+function pass() {
+    var password = "CAR";
+    if (password == prompt("Введите пароль: ")) {
+        alert("Пароль введен верно!");
+    } else {
+        alert("Пароль введен НЕ верно!");
+        pass();
+    }
+}
+
+compair();
+setTimeout(pass, 2000);</script>
+</body>
+</html>
